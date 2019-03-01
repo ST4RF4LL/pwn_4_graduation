@@ -17,4 +17,8 @@ just a basic stack-overflow challenge with no any secure mechanism open.
 ## pwn_2
 from *NPUCTF2018*
 int overflow+ROP
-> maybe become pwn3
+> may become pwn3
+
+## pwn_3
+> may become pwn2
+canary leak
