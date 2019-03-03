@@ -7,14 +7,10 @@ int getshell()
 
 int vulnerable_func()
 {
-    int i= 5;
     char s[0x40];
-    while(i--)
-    {
-        gets(s);
-        puts(s);
-        return 0;    
-    }
+    puts("Just input something?");
+    gets(s);
+    return 0;    
     
 }
 
