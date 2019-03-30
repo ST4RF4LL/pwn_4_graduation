@@ -1,7 +1,7 @@
 # pwn_4_graduation
 # overview
 ## level_1 basic stack overflows
-1. considering design series of stack-overflows challenges like **ret2text**,**ret2shellcode**,**ret2syscall**
+1. considering design series of stack-overflows challenges like **ret2text**,**ret2shellcode**,**ret2syscall**,**format string bug**
 2. higher-level difficulty challenges like **ret2libc**
 3. maybe set some vulnerabilities like **int overflow**,**canary leakage** before ret2XXX
 
@@ -23,6 +23,9 @@ int overflow+ROP
 > may become pwn2
 canary leak
 
+## pwn_4
+> maybe a fsb
+
 ## memo
 gcc -fno-stack-protector -z execstack -mpreferred-stack-boundary=4 -o pwn1 pwn1.c 
 Ubuntu下面的GCC默认开启了Stack Smashing Protector，
@@ -31,3 +34,7 @@ Ubuntu下面的GCC默认开启了Stack Smashing Protector，
 同时还需要加上允许栈执行的选项。 
 -fno-stack-protector用来关闭gcc编译器gs验证码机制 
 -z execstack用来关闭ld链接器堆栈段不可执行机制
+
+
+##
+docker 
