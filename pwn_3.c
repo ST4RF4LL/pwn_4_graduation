@@ -1,17 +1,20 @@
 #include <stdio.h>
 #include <unistd.h>
 // canary open
+int getshell()
+{
+    system("/bin/sh");
+    return 0;
+}
 
 int vulnerable_func()
 {
 
     char s[40];
 
-    while(1)
-    {
-        read(0,&s,40);
-        puts(s);
-    }
+    read(0,&s,41);
+    puts(s);
+    read(0,&s,0x40);
     return 0;
 }
 
