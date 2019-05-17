@@ -1,0 +1,4 @@
+Dear Alice,
+    I write this note to deliver the key flag message!
+    take this:flag{blue_tooth_is_1nt3r3st1ng!}
+    Bye!~
