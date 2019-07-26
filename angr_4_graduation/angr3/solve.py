@@ -13,11 +13,7 @@ def wrong(state):
 
 def main():
     p = angr.Project('angr3_o',auto_load_libs=False)
-    FIND_ADDR = 0x400676
-    AVOID_ADDR = [0x40068D,0x40060B]
-    
     argv1 = claripy.BVS("argv1",24*8)
-    
     state = p.factory.entry_state(args=['./angr3_o',argv1])
     # state = p.factory.entry_state(args=['./angr3',argv1],add_options={angr.options.LAZY_SOLVES})
     for flag_chr in argv1.chop(8):

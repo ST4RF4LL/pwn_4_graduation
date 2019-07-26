@@ -18,9 +18,6 @@ int check(char *pass)
     {
         for(int i=0;i<len;i++)
         {
-            // printf("%c %c\n",flag[i],pass[i]);
-            
-            // printf("%c ",chr);
             if(pass[i]+i!=flag[i])return 0;
         }
     }

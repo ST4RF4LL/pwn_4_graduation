@@ -7,6 +7,7 @@ context.log_level = 'debug'
 
 def pwn():
     p = process('pwn_1')
+    # p = remote('127.0.0.1',1234)
     # gdb.attach(p)
     # pause()
     payload = 'A'*0x4c

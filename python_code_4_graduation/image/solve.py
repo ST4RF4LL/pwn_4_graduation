@@ -14,7 +14,7 @@ def image_opt(input):
             r, g, b = pix[(x,y)]
                 # print(bin(key))
             text += str(r&1)
-    # print(text)
+    print(text)
 
     for i in range(0,len(text),8):
         temp = text[i:i+8]
